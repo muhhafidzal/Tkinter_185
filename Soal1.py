@@ -14,11 +14,11 @@ root = tk.Tk()
 root.title("Prediksi Prodi Pilihan")
 
 tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan",
-         font=("Arial", 16, "bold")).grid(row=0, column=0, columnspan=2, pady=10)
+         font=("Arial", 14, "bold")).grid(row=0, column=0, columnspan=2, pady=10)
 
 entries = []
 for i in range(10):
-    tk.Label(root, text=f"Nilai Mapel {i+1}").grid(row=i+1, column=0, padx=10, pady=2, sticky="e")
+    tk.Label(root, text=f"Nilai Mata Pelajaran {i+1}").grid(row=i+1, column=0, padx=10, pady=2, sticky="e")
     e = tk.Entry(root)
     e.grid(row=i+1, column=1, padx=10, pady=2)
     entries.append(e)
